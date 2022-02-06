@@ -1,0 +1,72 @@
+{
+  "name": "desafio-dev-api-rest",
+  "version": "1.0.0",
+  "description": "A Dock está crescendo e expandindo seus negócios, gerando novas oportunidades de revolucionar o mercado financeiro e criar produtos diferenciados. Nossa próxima missão é construir uma nova conta digital Dock para nossos clientes utilizarem através de endpoints, onde receberemos requisições em um novo backend que deverá gerenciar as contas e seus portadores (os donos das contas digitais).",
+  "main": "app.js",
+  "engines": {
+    "node": ">=12.x.x"
+  },
+  "scripts": {
+    "commit": "git-cz",
+    "start:staging": "sequelize db:migrate &&  node app.js",
+    "start:dev": "nodemon app.js",
+    "format": "prettier --write './src/**/*.{js,ts,json}'",
+    "lint": "eslint --fix './src/**/*.js'",
+    "pretest": "NODE_ENV=test ./scripts/setup-db-test.sh",
+    "test": "NODE_ENV=test jest --coverage --runInBand --forceExit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faelzimr/desafio-dev-api-rest.git"
+  },
+  "author": "Rafael Martins Rodrigues",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faelzimr/desafio-dev-api-rest/issues"
+  },
+  "homepage": "https://github.com/faelzimr/desafio-dev-api-rest#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lean-changelog"
+    }
+  },
+  "devDependencies": {
+    "eslint": "^8.8.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^23.8.2",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-sonarjs": "^0.5.0",
+    "faker": "^4.1.0",
+    "jest": "^26.6.3",
+    "nodemon": "^1.19.1",
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.3.2",
+    "supertest": "^6.1.3"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "cpf-cnpj-validator": "^1.0.3",
+    "date-fns": "^2.16.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.3.0",
+    "http-status-codes": "^1.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "morgan-body": "^2.4.13",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "request": "^2.88.2",
+    "sequelize": "^6.6.5",
+    "sequelize-auto": "^0.8.2",
+    "sequelize-cli": "^6.2.0",
+    "swagger-ui-express": "^4.1.4",
+    "uuid": "^8.3.2",
+    "winston": "^3.5.1",
+    "yup": "^0.28.3"
+  }
+}

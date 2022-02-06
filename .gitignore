@@ -1,0 +1,16 @@
+.vscode
+
+node_modules
+coverage
+.scannerwork
+
+.env
+eslint-report.json
+src/tmp
+package-lock.json
+
+jest-stare
+temp
+logs
+*.log
+

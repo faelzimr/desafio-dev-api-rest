@@ -1,3 +1,28 @@
+# Solution
+
+## How to run
+
+Fill the `.env`
+
+Install the dependencies and devDependencies and start the server.
+
+```sh
+$ cd desafio-dev-api-rest
+$ yarn
+$ yarn sequelize db:migrate
+$ yarn sequelize-cli db:seed:all
+$ yarn start:dev
+```
+#### Documentation
+
+You might want to check the API docs as well!
+
+- Swagger: Just start the application at your desired `host:port` and use the route: `/api/v1/documentation` to open the swagger docs;
+
+## Stack
+  - postgres
+  - NodeJS
+
 # Cenário
 
 A Dock está crescendo e expandindo seus negócios, gerando novas oportunidades de revolucionar o mercado financeiro e criar produtos diferenciados.
